@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merging Spirit Inc.™ — Rev. Sharon Shaw-MhD</title>
+<meta name="description" content="Merging Spirit Inc.™ — Metaphysical Healing, Intuitive Readings, Shadow Work & Spiritual Coaching with Rev. Sharon Shaw-MhD, Doctor of Metaphysical Healing, Homestead, Florida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #d4af37;
+  --gold-light: #e8c96a;
+  --gold-dim: #9a7e2a;
+  --cream: #f0e8d5;
+  --cream-dim: #b8a888;
+  --bg: #0a0908;
+  --bg-2: #110f0d;
+  --bg-3: #181410;
+  --surface: #1c1814;
+  --surface-2: #231e18;
+  --border: rgba(212,175,55,0.18);
+  --border-light: rgba(212,175,55,0.32);
+  --text: #f0e8d5;
+  --text-muted: #9a8f7a;
+  --text-faint: #5a5248;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Jost', 'Helvetica Neue', sans-serif;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+  --space-4: 1rem; --space-6: 1.5rem; --space-8: 2rem;
+  --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem;
+  --space-20: 5rem; --space-24: 6rem;
+  --content: 1100px;
+  --transition: 200ms cubic-bezier(0.16,1,0.3,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;scroll-padding-top:80px}
+body{font-family:var(--font-body);font-size:clamp(1rem,0.95rem + 0.25vw,1.125rem);color:var(--text);background:var(--bg);line-height:1.75;min-height:100dvh}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none;transition:color var(--transition)}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--font-display);line-height:1.15;text-wrap:balance}
+p,li{max-width:68ch;text-wrap:pretty}
+.container{max-width:var(--content);margin-inline:auto;padding-inline:clamp(var(--space-4),4vw,var(--space-12))}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,9,8,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:var(--content);margin-inline:auto;padding-inline:clamp(var(--space-4),4vw,var(--space-12));display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo{font-family:var(--font-display);font-size:clamp(1.1rem,1rem+0.5vw,1.4rem);font-weight:600;color:var(--gold);letter-spacing:0.04em}
+.nav-logo span{color:var(--cream-dim);font-weight:300;font-size:0.75em;display:block;letter-spacing:0.12em;text-transform:uppercase;margin-top:-2px}
+.nav-links{display:flex;gap:var(--space-8);list-style:none}
+.nav-links a{font-size:0.875rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);transition:color var(--transition)}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:var(--space-2) var(--space-6);border-radius:var(--radius-sm);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;transition:all var(--transition)}
+.nav-cta:hover{background:var(--gold);color:var(--bg)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:var(--space-2)}
+.hamburger span{display:block;width:24px;height:1.5px;background:var(--gold);transition:all var(--transition)}
+.mobile-menu{display:none;position:fixed;inset:72px 0 0;background:rgba(10,9,8,0.98);z-index:99;padding:var(--space-8);flex-direction:column;gap:var(--space-6)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--font-display);font-size:clamp(1.5rem,4vw,2rem);color:var(--cream);border-bottom:1px solid var(--border);padding-bottom:var(--space-4)}
+.mobile-menu a:hover{color:var(--gold)}
+
+/* ── GOLD DIVIDER ── */
+.gold-rule{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:var(--space-4) 0}
+.gold-rule.center{margin-inline:auto}
+
+/* ── HERO ── */
+#home{min-height:100dvh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:72px}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(212,175,55,0.07) 0%,transparent 70%),radial-gradient(ellipse 50% 80% at 20% 80%,rgba(212,175,55,0.04) 0%,transparent 60%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center;padding-block:var(--space-20)}
+.hero-eyebrow{font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:var(--space-6)}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.8rem,1rem+5vw,5.5rem);font-weight:300;color:var(--cream);line-height:1.05;margin-bottom:var(--space-6)}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-subtitle{font-size:clamp(1rem,0.9rem+0.5vw,1.2rem);color:var(--text-muted);max-width:48ch;line-height:1.7;margin-bottom:var(--space-10)}
+.hero-actions{display:flex;gap:var(--space-4);flex-wrap:wrap}
+.btn-primary{background:var(--gold);color:var(--bg);padding:var(--space-3) var(--space-8);font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;border-radius:var(--radius-sm);font-weight:500;transition:all var(--transition)}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--border-light);color:var(--cream-dim);padding:var(--space-3) var(--space-8);font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;border-radius:var(--radius-sm);transition:all var(--transition)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.hero-credentials{display:flex;flex-direction:column;gap:var(--space-3);margin-top:var(--space-10)}
+.credential-item{display:flex;align-items:center;gap:var(--space-3);font-size:0.82rem;color:var(--text-muted);letter-spacing:0.04em}
+.credential-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;flex-shrink:0}
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center}
+.hero-emblem{width:320px;height:320px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(circle,rgba(212,175,55,0.06) 0%,transparent 70%)}
+.hero-emblem::before{content:'';position:absolute;inset:-12px;border-radius:50%;border:1px solid rgba(212,175,55,0.08)}
+.hero-emblem::after{content:'';position:absolute;inset:-24px;border-radius:50%;border:1px solid rgba(212,175,55,0.04)}
+.emblem-inner{text-align:center}
+.emblem-symbol{font-family:var(--font-display);font-size:5rem;color:var(--gold);opacity:0.8;line-height:1}
+.emblem-text{font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-faint);margin-top:var(--space-2)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);margin-top:var(--space-8);width:100%}
+.stat{text-align:center;padding:var(--space-4);border:1px solid var(--border);border-radius:var(--radius-md);background:var(--surface)}
+.stat-number{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;color:var(--gold)}
+.stat-label{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-top:2px}
+
+/* ── SECTIONS ── */
+section{padding-block:clamp(var(--space-16),8vw,var(--space-24))}
+.section-eyebrow{font-size:0.72rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:var(--space-4)}
+.section-title{font-family:var(--font-display);font-size:clamp(2rem,1rem+3vw,3.5rem);font-weight:300;color:var(--cream);margin-bottom:var(--space-6)}
+.section-title em{font-style:italic;color:var(--gold)}
+.section-lead{font-size:clamp(1rem,0.9rem+0.3vw,1.15rem);color:var(--text-muted);max-width:56ch;line-height:1.8}
+
+/* ── ABOUT ── */
+#about{background:var(--bg-2)}
+.about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(var(--space-10),5vw,var(--space-20));align-items:start}
+.about-portrait{position:relative}
+.portrait-frame{width:100%;aspect-ratio:3/4;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--surface);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.portrait-frame::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(212,175,55,0.08) 0%,transparent 70%)}
+.portrait-initials{font-family:var(--font-display);font-size:clamp(3rem,8vw,6rem);font-weight:300;color:var(--gold);opacity:0.5}
+.portrait-badge{position:absolute;bottom:var(--space-4);left:var(--space-4);right:var(--space-4);background:rgba(10,9,8,0.88);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-4)}
+.badge-name{font-family:var(--font-display);font-size:1.1rem;color:var(--cream);font-weight:500}
+.badge-title{font-size:0.72rem;color:var(--gold);letter-spacing:0.12em;text-transform:uppercase;margin-top:2px}
+.about-content p{color:var(--text-muted);line-height:1.9;margin-bottom:var(--space-6)}
+.credentials-list{list-style:none;margin-top:var(--space-8);display:flex;flex-direction:column;gap:var(--space-3)}
+.credentials-list li{display:flex;align-items:flex-start;gap:var(--space-3);font-size:0.9rem;color:var(--text-muted)}
+.credentials-list li::before{content:'✦';color:var(--gold);font-size:0.7rem;margin-top:4px;flex-shrink:0}
+.founded-badge{display:inline-flex;align-items:center;gap:var(--space-2);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-dim);border:1px solid var(--border);padding:var(--space-2) var(--space-4);border-radius:var(--radius-sm);margin-bottom:var(--space-6)}
+
+/* ── SERVICES ── */
+#services{background:var(--bg)}
+.services-intro{max-width:600px;margin-bottom:var(--space-16)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:var(--space-6)}
+.service-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:var(--space-8);transition:all var(--transition);position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0}
+.service-card:hover{border-color:var(--border-light);transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,0.4)}
+.service-card:hover::before{opacity:1}
+.service-type{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:var(--space-3)}
+.service-name{font-family:var(--font-display);font-size:clamp(1.2rem,2vw,1.5rem);color:var(--cream);margin-bottom:var(--space-3);line-height:1.2}
+.service-desc{font-size:0.88rem;color:var(--text-muted);line-height:1.7;margin-bottom:var(--space-6)}
+.service-footer{display:flex;justify-content:space-between;align-items:center;padding-top:var(--space-4);border-top:1px solid var(--border)}
+.service-price{font-family:var(--font-display);font-size:1.3rem;color:var(--gold);font-weight:500}
+.service-duration{font-size:0.75rem;color:var(--text-faint);letter-spacing:0.06em}
+.service-book{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);border:1px solid var(--border-light);padding:var(--space-2) var(--space-4);border-radius:var(--radius-sm);transition:all var(--transition)}
+.service-book:hover{background:var(--gold);color:var(--bg)}
+.workshops-title{font-family:var(--font-display);font-size:clamp(1.5rem,2.5vw,2.2rem);font-weight:300;color:var(--cream);margin:var(--space-16) 0 var(--space-8)}
+.workshops-title em{font-style:italic;color:var(--gold)}
+.accelerator-block{margin-top:var(--space-16);background:var(--surface-2);border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:clamp(var(--space-8),4vw,var(--space-16));display:grid;grid-template-columns:1fr auto;gap:var(--space-8);align-items:center}
+.accelerator-label{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:var(--space-3)}
+.accelerator-title{font-family:var(--font-display);font-size:clamp(1.4rem,2.5vw,2rem);color:var(--cream);margin-bottom:var(--space-4)}
+.accelerator-desc{font-size:0.9rem;color:var(--text-muted);line-height:1.8;max-width:52ch}
+.accelerator-cta{text-align:center;flex-shrink:0}
+.accelerator-price{font-family:var(--font-display);font-size:1rem;color:var(--gold-dim);margin-bottom:var(--space-4);letter-spacing:0.06em}
+
+/* ── REVIEWS ── */
+#reviews{background:var(--bg-2)}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:var(--space-6);margin-top:var(--space-12)}
+.review-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:var(--space-8);position:relative}
+.review-stars{color:var(--gold);font-size:0.9rem;margin-bottom:var(--space-4);letter-spacing:2px}
+.review-text{font-size:0.9rem;color:var(--text-muted);line-height:1.8;margin-bottom:var(--space-6);font-style:italic}
+.review-author{font-family:var(--font-display);font-size:1rem;color:var(--cream);font-weight:500}
+.review-meta{font-size:0.72rem;color:var(--text-faint);margin-top:2px;letter-spacing:0.04em}
+.review-quote{position:absolute;top:var(--space-6);right:var(--space-6);font-family:var(--font-display);font-size:3rem;color:var(--gold);opacity:0.12;line-height:1}
+
+/* ── BOOK ── */
+#book{background:var(--bg)}
+.book-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(var(--space-10),5vw,var(--space-20));align-items:start}
+.book-info p{color:var(--text-muted);line-height:1.9;margin-bottom:var(--space-6)}
+.session-types{list-style:none;margin-top:var(--space-8);display:flex;flex-direction:column;gap:var(--space-3)}
+.session-types li{display:flex;align-items:center;gap:var(--space-3);font-size:0.88rem;color:var(--text-muted)}
+.session-types li::before{content:'✦';color:var(--gold);font-size:0.65rem;flex-shrink:0}
+.booking-form{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:clamp(var(--space-8),4vw,var(--space-12))}
+.booking-form h3{font-family:var(--font-display);font-size:1.6rem;color:var(--cream);margin-bottom:var(--space-2)}
+.form-subtitle{font-size:0.82rem;color:var(--text-muted);margin-bottom:var(--space-8)}
+.form-group{margin-bottom:var(--space-6)}
+.form-group label{display:block;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:var(--space-2)}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:var(--bg-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);color:var(--cream);font-family:var(--font-body);font-size:0.9rem;transition:border-color var(--transition);outline:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+.form-group select{appearance:none;-webkit-appearance:none;cursor:pointer}
+.form-group textarea{resize:vertical;min-height:100px;line-height:1.6}
+.form-group input::placeholder,.form-group textarea::placeholder{color:var(--text-faint)}
+.form-group select option{background:var(--bg-3);color:var(--cream)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)}
+.form-submit{width:100%;background:var(--gold);color:var(--bg);padding:var(--space-4);font-size:0.85rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;border-radius:var(--radius-sm);margin-top:var(--space-4);transition:all var(--transition)}
+.form-submit:hover{background:var(--gold-light)}
+.form-success{display:none;text-align:center;padding:var(--space-8)}
+.form-success .success-icon{font-size:2.5rem;margin-bottom:var(--space-4)}
+.form-success h4{font-family:var(--font-display);font-size:1.5rem;color:var(--cream);margin-bottom:var(--space-3)}
+.form-success p{font-size:0.9rem;color:var(--text-muted)}
+
+/* ── CONTACT ── */
+#contact{background:var(--bg-2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(var(--space-10),5vw,var(--space-20))}
+.contact-info{display:flex;flex-direction:column;gap:var(--space-8)}
+.contact-item{display:flex;gap:var(--space-4);align-items:flex-start}
+.contact-icon{width:40px;height:40px;border:1px solid var(--border);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;color:var(--gold)}
+.contact-label{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4px}
+.contact-value{color:var(--cream);font-size:0.95rem}
+.contact-value a:hover{color:var(--gold)}
+.social-links{display:flex;gap:var(--space-3);margin-top:var(--space-6);flex-wrap:wrap}
+.social-link{border:1px solid var(--border);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-5);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);transition:all var(--transition)}
+.social-link:hover{border-color:var(--gold);color:var(--gold)}
+.contact-message{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:clamp(var(--space-8),4vw,var(--space-12))}
+.contact-message h3{font-family:var(--font-display);font-size:1.5rem;color:var(--cream);margin-bottom:var(--space-6)}
+.contact-form-group{margin-bottom:var(--space-5)}
+.contact-form-group label{display:block;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:var(--space-2)}
+.contact-form-group input,.contact-form-group textarea{width:100%;background:var(--bg-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);color:var(--cream);font-family:var(--font-body);font-size:0.9rem;transition:border-color var(--transition);outline:none}
+.contact-form-group input:focus,.contact-form-group textarea:focus{border-color:var(--gold)}
+.contact-form-group textarea{resize:vertical;min-height:120px}
+.contact-form-group input::placeholder,.contact-form-group textarea::placeholder{color:var(--text-faint)}
+.contact-submit{width:100%;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:var(--space-3) var(--space-8);font-size:0.82rem;letter-spacing:0.12em;text-transform:uppercase;border-radius:var(--radius-sm);margin-top:var(--space-2);transition:all var(--transition)}
+.contact-submit:hover{background:var(--gold);color:var(--bg)}
+
+/* ── FOOTER ── */
+footer{background:var(--bg-3);border-top:1px solid var(--border);padding-block:var(--space-12)}
+.footer-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:var(--space-10)}
+.footer-brand{font-family:var(--font-display);font-size:1.3rem;color:var(--gold);margin-bottom:var(--space-3)}
+.footer-tagline{font-size:0.85rem;color:var(--text-muted);max-width:28ch;line-height:1.7}
+.footer-col h4{font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:var(--space-5)}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:var(--space-3)}
+.footer-links a{font-size:0.88rem;color:var(--text-muted);transition:color var(--transition)}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{margin-top:var(--space-10);padding-top:var(--space-6);border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-4)}
+.footer-copy{font-size:0.78rem;color:var(--text-faint)}
+.footer-copy span{color:var(--gold-dim)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero-grid,.about-grid,.book-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-visual{order:-1}
+  .hero-emblem{width:220px;height:220px}
+  .hero-stats{grid-template-columns:repeat(3,1fr)}
+  .about-portrait{max-width:320px;margin-inline:auto}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .accelerator-block{grid-template-columns:1fr}
+  .accelerator-cta{text-align:left}
+}
+@media(max-width:640px){
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .hero-stats{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .form-row{grid-template-columns:1fr}
+  .hero-actions{flex-direction:column}
+  .btn-primary,.btn-ghost{text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- SKIP LINK -->
+<a href="#main" class="sr-only">Skip to content</a>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Merging Spirit Home">
+      Merging Spirit Inc.™
+      <span>Rev. Sharon Shaw-MhD</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#book" class="nav-cta">Book a Session</a>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#reviews" onclick="closeMobile()">Testimonials</a>
+  <a href="#book" onclick="closeMobile()">Book a Session</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<main id="main">
+
+<!-- ══ HERO ══ -->
+<section id="home" aria-label="Welcome">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="hero-eyebrow">✦ Merging Spirit Inc.™ — Est. 2007</p>
+        <h1 class="hero-title">
+          Where Spirit<br>Meets <em>Transformation</em>
+        </h1>
+        <p class="hero-subtitle">Metaphysical Healing · Intuitive Readings · Shadow Work · Draconic Astrology · Soul Clarity. Serving South Florida and beyond for nearly two decades.</p>
+        <div class="hero-actions">
+          <a href="#book" class="btn-primary">Book Your Session</a>
+          <a href="#services" class="btn-ghost">Explore Services</a>
+        </div>
+        <div class="hero-credentials">
+          <div class="credential-item"><span class="credential-dot"></span>Doctor of Metaphysical Healing (MhD)</div>
+          <div class="credential-item"><span class="credential-dot"></span>Ordained Non-Denominational Interfaith Minister</div>
+          <div class="credential-item"><span class="credential-dot"></span>Certified Shadow Work Practitioner</div>
+          <div class="credential-item"><span class="credential-dot"></span>Medical Intuitive · RoHun Therapist</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-6);width:100%">
+          <div class="hero-emblem">
+            <div class="emblem-inner">
+              <div class="emblem-symbol">🜂</div>
+              <div class="emblem-text">Merging Spirit</div>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">19+</div>
+              <div class="stat-label">Years of Service</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">5yr</div>
+              <div class="stat-label">Radio Host</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">∞</div>
+              <div class="stat-label">Lives Transformed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about" aria-label="About Rev. Sharon Shaw-MhD">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-portrait">
+        <div class="portrait-frame">
+          <div class="portrait-initials">RS</div>
+          <div class="portrait-badge">
+            <div class="badge-name">Rev. Sharon Shaw-MhD</div>
+            <div class="badge-title">Doctor of Metaphysical Healing</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-eyebrow">About</p>
+        <div class="gold-rule"></div>
+        <div class="founded-badge">✦ Founded 2007 · Homestead, Florida</div>
+        <h2 class="section-title">Merge with the<br><em>Spirit Within</em></h2>
+        <p>Rev. Sharon Shaw-MhD is a Doctor of Metaphysical Healing, Ordained Non-Denominational Interfaith Minister, Certified Shadow Work Practitioner, Meditation Instructor, Medical Intuitive, and Soul Clarity Card Therapy Specialist — with nearly two decades of service to clients across South Florida and beyond.</p>
+        <p>Founded in 2007, Merging Spirit Inc.™ offers a uniquely powerful framework that bridges the 3D world of personality and ego with the 5D soul's karmic mission. Using the Tri-Engine Diagnostic System — combining Cardology, Draconic Astrology, and Attachment Style — Rev. Sharon delivers precision guidance that cuts through surface patterns to reach the root of what is truly happening in a client's life.</p>
+        <p>As the former host of <em>Inner Lately</em> — a live call-in spiritual radio program with a five-year run on the Women for Women Network with national iHeart Radio distribution — Rev. Sharon has served thousands of listeners and clients who were seeking real answers, honest guidance, and lasting transformation.</p>
+        <ul class="credentials-list" aria-label="Credentials">
+          <li>Doctor of Metaphysical Healing — Delphi University</li>
+          <li>Ordained Non-Denominational Interfaith Minister</li>
+          <li>Certified Shadow Work Practitioner & Meditation Instructor</li>
+          <li>Medical Intuitive & RoHun Card Therapist</li>
+          <li>Soul Clarity Card Therapy Specialist</li>
+          <li>Former Host, Inner Lately — iHeart Radio / W4WN Women for Women Network</li>
+          <li>15+ Years Executive Leadership & Operations Management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section id="services" aria-label="Services and Offerings">
+  <div class="container">
+    <div class="services-intro">
+      <p class="section-eyebrow">Services</p>
+      <div class="gold-rule"></div>
+      <h2 class="section-title">Healing <em>Offerings</em></h2>
+      <p class="section-lead">Every session is a precision experience — designed specifically for where you are in your journey and where your soul is calling you to go.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-type">Individual Session · Entry Point</div>
+        <h3 class="service-name">Heart of the Matter — New Client Reading</h3>
+        <p class="service-desc">A focused reading for first-time clients seeking clarity, direction, and insight into what is happening right now. Uses Tarot and Cardology to find the root pattern and the next clean move.</p>
+        <div class="service-footer">
+          <div>
+            <div class="service-price">$150</div>
+            <div class="service-duration">1 Hour · In-Person or Virtual</div>
+          </div>
+          <a href="#book" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-type">Individual Session · Signature</div>
+        <h3 class="service-name">Heart of the Matter — Tri-Engine Diagnostic</h3>
+        <p class="service-desc">The full Heart of the Matter session powered by the Tri-Engine: Cardology (3D avatar), Draconic Astrology (5D soul), and Attachment Style (nervous system wiring). Reveals the root pattern and next aligned move.</p>
+        <div class="service-footer">
+          <div>
+            <div class="service-price">$222</div>
+            <div class="service-duration">1.5 Hours · In-Person or Virtual</div>
+          </div>
+          <a href="#book" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-type">Individual Series · Shadow Work</div>
+        <h3 class="service-name">Soul Integration — Shadow Card Therapy™</h3>
+        <p class="service-desc">For the spiritually aware who still feel stuck. A 3-session precision shadow excavation series. Identifies the core shadow archetype, clears energetic cords and somatic stored patterns, and integrates a new soul-aligned self-narrative. Includes the 21-Day Clearing Prayer as the closing seal.</p>
+        <div class="service-footer">
+          <div>
+            <div class="service-price">$555</div>
+            <div class="service-duration">3 Sessions · 90 Min Each · $195/session</div>
+          </div>
+          <a href="#book" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-type">Individual Series · Energy Work</div>
+        <h3 class="service-name">Sacred Chakra Scan™</h3>
+        <p class="service-desc">A required 2-session holistic energy scan. Session 1: spiritual energy field drawing and interpretation. Session 2: thoughts and feelings drawing, interpretation, and The Weave — showing how both systems affect each other.</p>
+        <div class="service-footer">
+          <div>
+            <div class="service-price">$330</div>
+            <div class="service-duration">2 Sessions · 60–90 Min Each</div>
+          </div>
+          <a href="#book" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+
+    <h3 class="workshops-title">Group <em>Workshops</em></h3>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-type">Group Workshop</div>
+        <h3 class="service-name">Sacred Aura Circle™</h3>
+        <p class="service-desc">Live group energy drawing workshop. Partners draw each other's energy fields — no art skills required. Rev. Sharon interprets each drawing live. A demonstration of how Spirit communicates through the hand. <em>You Don't Need to Know How to Draw.</em></p>
+        <div class="service-footer">
+          <div>
+            <div class="service-price">$44/person</div>
+            <div class="service-duration">2 Hours · Max 10 · $440/group</div>
+          </div>
+          <a href="#book" class="service-book">Inquire</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-type">Group Workshop · Full Immersion</div>
+        <h3 class="service-name">Merging Spirit Awakening™</h3>
+        <p class="service-desc">Full 7-chakra clearing workshop in two parts. Covers all chakras and the four major negative selves: The Unworthy Self, The Frightened Self, The Judge, and The Helpless Self. Includes guided meditations, group discussion, affirmations, and healing circle close.</p>
+        <div class="service-footer">
+          <div>
+            <div class="service-price">$88/person</div>
+            <div class="service-duration">2.5 Hours · Max 10 · $880/group</div>
+          </div>
+          <a href="#book" class="service-book">Inquire</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="accelerator-block">
+      <div>
+        <div class="accelerator-label">✦ Premium Offering</div>
+        <h3 class="accelerator-title">Merging Spirit 8-Week Accelerator</h3>
+        <p class="accelerator-desc">A high-touch, diagnostics-led spiritual transformation container for people who have defied the odds — medically, psychologically, or spiritually — and are ready to understand why their soul chose this path and what they are meant to build from it. Powered by the Tri-Engine Diagnostic and the full 8-week curriculum.</p>
+      </div>
+      <div class="accelerator-cta">
+        <div class="accelerator-price">Premium · Apply to Book</div>
+        <a href="#book" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section id="reviews" aria-label="Client Testimonials">
+  <div class="container">
+    <p class="section-eyebrow">Testimonials</p>
+    <div class="gold-rule"></div>
+    <h2 class="section-title">What Clients <em>Say</em></h2>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Rev. Sharon Shaw is an exceptional person and her knowledge and skills in the Metaphysical practice will definitely help you find the answers that you need to bring the changes in your life to be happier and in tune with your Soul's purpose. She is direct, clear and to the point — she will tell it as it is. Rev. Sharon is a loyal, smart, intelligent, and spiritually powerful therapist that will make your life that necessary turn that your Soul is requesting from within."</p>
+        <div class="review-author">Luis M.</div>
+        <div class="review-meta">Local Guide · Google Review</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Meeting Sharon changed my life! Her guidance and insight always brings me clarity and affirms my intuition and intrinsic instincts. Sharon's services have allowed me to learn more about myself, identify patterns and expired ways of being, heal from past traumas and get clear on my true desires, hopes and dreams in life. If you're looking to get focused and clear on where you are in life and where you are going, I highly suggest booking a session with Sharon!"</p>
+        <div class="review-author">Ashley Solage</div>
+        <div class="review-meta">Local Guide · Google Review</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"If you ever need the real spill — the conversation that you always needed but never got, or that one thing that's holding you back and you need the extra push from your spirit guides because you feel like you lost touch — I'm telling you, come see RevSharon!!! She literally helped me see and understand things I never knew I needed but always longed for. It's life changing!!!"</p>
+        <div class="review-author">Alicia Harvey</div>
+        <div class="review-meta">Google Review</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I have been coming into alignment for a while with Rev Sharon and I'm very thankful I was led to her. I feel like she saved me. It is amazing having my own individual growth and mentoring front and center. I've come so far from when I started some 6 years ago — my own spirituality and findings, learned lessons and actually applying them to life."</p>
+        <div class="review-author">Natasha McCoy</div>
+        <div class="review-meta">Google Review</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"This was such a powerful experience that allowed me so much insight into where I am in my life and how to reach my true potential. Rev Sharon provided such a safe space for me to be vulnerable and honest with how I really was viewing myself. Self reflection can be tough but much more gentle when you have someone who can help you navigate your way around the process. Definitely would recommend."</p>
+        <div class="review-author">Lee Boyd</div>
+        <div class="review-meta">Local Guide · Google Review</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I love Rev Sharon. I love her energy and love that she hit the nail right on the head. If I could leave 10 stars I would. I'm more confident and direct with my approach on certain situations."</p>
+        <div class="review-author">Lakena Meminger</div>
+        <div class="review-meta">Google Review</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Always accurate and always worth the time. Her energy is so calming and nurturing — I will always go back to her 100%."</p>
+        <div class="review-author">Lorie Saddler</div>
+        <div class="review-meta">Local Guide · Google Review</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"What an amazing experience this was! Eye opening, honest and truthful! I highly recommend booking a session! You will not be disappointed!"</p>
+        <div class="review-author">Andree Garnier</div>
+        <div class="review-meta">Local Guide · Google Review · 2026</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ BOOK ══ -->
+<section id="book" aria-label="Book a Session">
+  <div class="container">
+    <div class="book-grid">
+      <div class="book-info">
+        <p class="section-eyebrow">Book a Session</p>
+        <div class="gold-rule"></div>
+        <h2 class="section-title">Begin Your<br><em>Journey</em></h2>
+        <p>Every transformation begins with a single step. Complete the booking form and Rev. Sharon will personally reach out within 24 hours to confirm your session details and guide you through the next steps.</p>
+        <p>Sessions are available in-person in Homestead, Florida and virtually for clients everywhere.</p>
+        <ul class="session-types" aria-label="Session options">
+          <li>Heart of the Matter — New Client Reading · $150</li>
+          <li>Heart of the Matter — Tri-Engine Diagnostic · $222</li>
+          <li>Soul Integration — Shadow Card Therapy™ · $555</li>
+          <li>Sacred Chakra Scan™ · $330</li>
+          <li>Sacred Aura Circle™ Group Workshop · $44/person</li>
+          <li>Merging Spirit Awakening™ Workshop · $88/person</li>
+          <li>8-Week Accelerator — Apply to Book</li>
+        </ul>
+      </div>
+
+      <div class="booking-form" id="bookingFormContainer">
+        <h3>Book Your Session</h3>
+        <p class="form-subtitle">Fill out the form below — Rev. Sharon will confirm within 24 hours.</p>
+        <form id="bookingForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx">
+          </div>
+          <div class="form-group">
+            <label for="service">Select Service *</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Choose your session...</option>
+              <option>Heart of the Matter — New Client Reading ($150)</option>
+              <option>Heart of the Matter — Tri-Engine Diagnostic ($222)</option>
+              <option>Soul Integration — Shadow Card Therapy™ ($555)</option>
+              <option>Sacred Chakra Scan™ ($330)</option>
+              <option>Sacred Aura Circle™ Group Workshop ($44/person)</option>
+              <option>Merging Spirit Awakening™ Workshop ($88/person)</option>
+              <option>8-Week Accelerator — Apply to Book</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="format">Session Format *</label>
+            <select id="format" name="format" required>
+              <option value="" disabled selected>In-Person or Virtual?</option>
+              <option>In-Person — Homestead, FL</option>
+              <option>Virtual — Video Call</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="preferred">Preferred Date & Time</label>
+            <input type="text" id="preferred" name="preferred" placeholder="e.g. Weekday mornings, After 3pm...">
+          </div>
+          <div class="form-group">
+            <label for="message">What brings you to this session?</label>
+            <textarea id="message" name="message" placeholder="Share a little about what you're navigating or what you hope to gain from your session..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Request My Session →</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✦</div>
+          <h4>Thank you — your request has been received.</h4>
+          <p>Rev. Sharon will personally reach out within 24 hours to confirm your session. Prepare your energy. Something is shifting. 🖤</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact" aria-label="Contact Information">
+  <div class="container">
+    <p class="section-eyebrow">Contact</p>
+    <div class="gold-rule"></div>
+    <h2 class="section-title">Get in <em>Touch</em></h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-value"><a href="tel:7544440430">754-444-0430</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value"><a href="mailto:sharonshaw@mergingspirit.com">sharonshaw@mergingspirit.com</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Location</div>
+            <div class="contact-value">Homestead, Florida 33035<br><small style="color:var(--text-faint);font-size:0.82rem">In-Person & Virtual Sessions Available</small></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🔗</div>
+          <div>
+            <div class="contact-label">All Links</div>
+            <div class="contact-value"><a href="https://linktr.ee/Mergingspirit" target="_blank" rel="noopener noreferrer">linktr.ee/Mergingspirit</a></div>
+          </div>
+        </div>
+        <div>
+          <div class="contact-label" style="margin-bottom:var(--space-3)">Follow & Connect</div>
+          <div class="social-links">
+            <a href="https://linktr.ee/Mergingspirit" target="_blank" rel="noopener noreferrer" class="social-link">Linktree</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-link">YouTube</a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-link">TikTok</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-message">
+        <h3>Send a Message</h3>
+        <form id="contactForm" novalidate>
+          <div class="contact-form-group">
+            <label for="cname">Name *</label>
+            <input type="text" id="cname" name="cname" placeholder="Your full name" required>
+          </div>
+          <div class="contact-form-group">
+            <label for="cemail">Email *</label>
+            <input type="email" id="cemail" name="cemail" placeholder="your@email.com" required>
+          </div>
+          <div class="contact-form-group">
+            <label for="csubject">Subject</label>
+            <input type="text" id="csubject" name="csubject" placeholder="What is this regarding?">
+          </div>
+          <div class="contact-form-group">
+            <label for="cmessage">Message *</label>
+            <textarea id="cmessage" name="cmessage" placeholder="How can Rev. Sharon help you today?" required></textarea>
+          </div>
+          <button type="submit" class="contact-submit">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Merging Spirit Inc.™</div>
+        <p class="footer-tagline">Where Spirit Meets Transformation. Serving South Florida and beyond since 2007.</p>
+      </div>
+      <div>
+        <h4 class="footer-col">Navigate</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#reviews">Testimonials</a></li>
+          <li><a href="#book">Book a Session</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col">Sessions</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#book">New Client Reading · $150</a></li>
+          <li><a href="#book">Tri-Engine Diagnostic · $222</a></li>
+          <li><a href="#book">Shadow Card Therapy™ · $555</a></li>
+          <li><a href="#book">Sacred Chakra Scan™ · $330</a></li>
+          <li><a href="#book">Group Workshops</a></li>
+          <li><a href="#book">8-Week Accelerator</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 <span>Merging Spirit Inc.™</span> · Rev. Sharon Shaw-MhD · All Rights Reserved</p>
+      <p class="footer-copy">📞 754-444-0430 · <span>sharonshaw@mergingspirit.com</span></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileMenu.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', isOpen);
+});
+function closeMobile() {
+  mobileMenu.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', false);
+}
+
+// Booking form
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const fname = document.getElementById('fname').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const service = document.getElementById('service').value;
+  if (!fname || !email || !service) {
+    alert('Please fill in your name, email, and select a service.');
+    return;
+  }
+  document.getElementById('bookingForm').style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+  // Build mailto
+  const body = `New Session Request\n\nName: ${fname} ${document.getElementById('lname').value}\nEmail: ${email}\nPhone: ${document.getElementById('phone').value}\nService: ${service}\nFormat: ${document.getElementById('format').value}\nPreferred Time: ${document.getElementById('preferred').value}\nMessage: ${document.getElementById('message').value}`;
+  window.location.href = `mailto:sharonshaw@mergingspirit.com?subject=Session Request — ${service}&body=${encodeURIComponent(body)}`;
+});
+
+// Contact form
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('cname').value.trim();
+  const email = document.getElementById('cemail').value.trim();
+  const msg = document.getElementById('cmessage').value.trim();
+  if (!name || !email || !msg) {
+    alert('Please fill in your name, email, and message.');
+    return;
+  }
+  const body = `From: ${name}\nEmail: ${email}\nSubject: ${document.getElementById('csubject').value}\n\n${msg}`;
+  window.location.href = `mailto:sharonshaw@mergingspirit.com?subject=Website Inquiry — ${document.getElementById('csubject').value || 'General Inquiry'}&body=${encodeURIComponent(body)}`;
+  this.reset();
+  alert('Thank you! Your message is ready to send. OneLove ♥️');
+});
+
+// Smooth active nav
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(l => l.style.color = '');
+      const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+      if (active) active.style.color = 'var(--gold)';
+    }
+  });
+}, { threshold: 0.4 });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
